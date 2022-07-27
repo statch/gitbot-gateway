@@ -4,3 +4,33 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    labels:
+      - "dependabot-bump"
+      - "npm-bump"
+    reviewers:
+      - "itsmewulf"
+    commit-message:
+      prefix: "npm"
+      prefix-development: "npm dev"
+      include: "scope"
+    pull-request-branch-name:
+      separator: "-"
+    assignees:
+      - "itsmewulf"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "dependabot-bump"
+      - "gh-actions-bump"
+    reviewers:
+      - "itsmewulf"
+    commit-message:
+      prefix: "github actions"
+      include: "scope"
+    pull-request-branch-name:
+      separator: "-"
+    assignees:
+      - "itsmewulf"
