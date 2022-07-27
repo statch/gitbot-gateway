@@ -11,8 +11,8 @@
     "ngrok": "ngrok http 6969",
     "publish": "wrangler publish",
     "register": "node src/register.js",
-    "fix": "eslint --fix '**/*.js'",
-    "lint": "eslint '**/*.js'"
+    "fix": "eslint --fix **/*.js",
+    "lint": "eslint **/*.js"
   },
   "repository": {
     "type": "git",
