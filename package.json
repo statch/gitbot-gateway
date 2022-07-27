@@ -10,7 +10,9 @@
     "dev": "wrangler dev src/server.js",
     "ngrok": "ngrok http 6969",
     "publish": "wrangler publish",
-    "register": "node src/register.js"
+    "register": "node src/register.js",
+    "fix": "eslint --fix '**/*.js'",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,9 @@
     "itty-router": "^2.5.1"
   },
   "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "ngrok": "^4.3.0",
     "node-fetch": "^3.2.2",
     "prettier": "^2.5.1",
