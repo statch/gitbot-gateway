@@ -1,0 +1,7 @@
+name = "gitbot"
+main = "src/server.js"
+account_id = "611419771226127f40565bc3f2421ee2"
+compatibility_date = "2022-07-27"
+
+[dev]
+port = 6969
