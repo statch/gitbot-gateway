@@ -79,7 +79,7 @@ export default {
 			const signature = request.headers.get('x-signature-ed25519');
 			const timestamp = request.headers.get('x-signature-timestamp');
 			console.log(
-				`sig: ${signature}; ts: ${timestamp}; pubkey: ${env.DISCORD_APPLICATION_PUBLIC_KEY}`
+				`sig: ${signature}; ts: ${timestamp}; pubkey: ${env.DISCORD_PUBLIC_KEY}`
 			);
 			const body = await request.clone().arrayBuffer();
 			const isValidRequest = verifyKey(
