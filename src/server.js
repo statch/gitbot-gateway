@@ -20,7 +20,7 @@ class JsonResponse extends Response {
 
 const router = Router();
 
-router.get('/', (_, env) => {
+router.get('/', () => {
 	return new Response(`👋 GitBot`);
 });
 
