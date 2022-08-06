@@ -1,2 +1,2 @@
-# gitbot-http
-The interaction handler for GitBot, based on Cloudflare Workers ☁️
+# GitBot Gateway 🔑
+The web layer of GitBot, handling interactions and OAuth, built with Workers☁️
