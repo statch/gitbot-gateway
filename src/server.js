@@ -75,7 +75,10 @@ export default {
 	 * @returns
 	 */
 	async fetch(request, env) {
-		if (request.method === 'POST' && /[^/]*$/.exec(request.url)[0] === 'interactions') {
+		if (
+			request.method === 'POST' &&
+			/[^/]*$/.exec(request.url)[0] === 'interactions'
+		) {
 			const signature = request.headers.get('x-signature-ed25519');
 			const timestamp = request.headers.get('x-signature-timestamp');
 			console.log(
