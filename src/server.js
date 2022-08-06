@@ -21,10 +21,10 @@ class JsonResponse extends Response {
 const router = Router();
 
 router.get('/', (_, env) => {
-	return new Response(`👋 ${env.DISCORD_APPLICATION_ID}`);
+	return new Response(`👋 GitBot`);
 });
 
-router.post('/', async (request) => {
+router.post('/interactions', async (request) => {
 	const message = await request.json();
 	if (message.type === InteractionType.PING) {
 		// The PING message type is used during the initial webhook handshake
@@ -75,7 +75,7 @@ export default {
 	 * @returns
 	 */
 	async fetch(request, env) {
-		if (request.method === 'POST') {
+		if (request.method === 'POST' && request.url === '/interactions') {
 			const signature = request.headers.get('x-signature-ed25519');
 			const timestamp = request.headers.get('x-signature-timestamp');
 			console.log(
