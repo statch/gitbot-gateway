@@ -40,7 +40,7 @@
     "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.4.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "ngrok": "^4.3.0",
+    "ngrok": "^4.3.3",
     "node-fetch": "^3.2.10",
     "prettier": "^2.5.1",
     "wrangler": "^2.0.25"
