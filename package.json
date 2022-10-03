@@ -34,7 +34,7 @@
   "homepage": "https://github.com/statch/gitbot-http#readme",
   "dependencies": {
     "discord-interactions": "^3.0.0",
-    "itty-router": "^2.5.1"
+    "itty-router": "^2.6.6"
   },
   "devDependencies": {
     "eslint": "^8.23.1",
