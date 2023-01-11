@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.4.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.0.0",
     "ngrok": "^4.3.3",
     "node-fetch": "^3.3.0",
