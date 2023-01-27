@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/statch/gitbot-http#readme",
   "dependencies": {
-    "discord-interactions": "^3.0.0",
+    "discord-interactions": "^3.3.0",
     "itty-router": "^3.0.11"
   },
   "devDependencies": {
